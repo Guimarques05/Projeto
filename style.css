@@ -28,6 +28,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -160,4 +161,14 @@ a {
 
 a:focus {
   outline: none;
+}
+/* media queries */
+@media (min-widt: 700px) {
+    :root {
+      --bg-url:(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+      --bg-url: url(./assets/bg-descktop-light.jpg);
+    }
 }
